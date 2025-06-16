@@ -15,6 +15,7 @@ form.addEventListener('submit', (event) => {
     customLoader.style.display = 'block';
 
     if (!query) {
+        customLoader.style.display = 'none';
         iziToast.warning({
             message: 'Please enter a search query!',
             position: 'topRight'
