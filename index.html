@@ -8,17 +8,23 @@
     <script type="module" crossorigin src="/goit-advancedjs-hw-03/index.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-Bg-92U7s.js">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/vendor-DkczhqSJ.css">
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/index-6TQOg4Xl.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-03/assets/index-CbJxVNmF.css">
   </head>
   <body>
       <form action="" class="inputform">
-        <input type="text" class="searchfield" placeholder="Search images...">
+        <input type="text" class="searchfield" name="searchfield" placeholder="Search images...">
         <button class="searchButton">Search</button>
       </form>
 
       <p id="loading-message" style="display:none; text-align:center; margin-top:24px;">
         Loading images, please wait
       </p>
+      <div id="custom-loader" style="display:none;">
+        <div class="loader loader-1">
+          <div class="loader-outter"></div>
+          <div class="loader-inner"></div>
+        </div>
+      </div>
 
       <ul class="gallery"></ul>
   </body>
